@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+	<title>My Podcasts</title>
+	<dateCreated>Sun, 07 Mar 2010 15:53:26 GMT</dateCreated>
+	<dateModified>Sun, 07 Mar 2010 15:53:26 GMT</dateModified>
+</head>
+<body>
+  <outline text="Science and Tech">
+    <outline text="APM: Future Tense" type="rss" 
+             xmlUrl="http://www.publicradio.org/columns/futuretense/podcast.xml" 
+             htmlUrl="http://www.publicradio.org/columns/futuretense/" />
+	<outline text="Engines Of Our Ingenuity Podcast" type="rss" 
+             xmlUrl="http://www.npr.org/rss/podcast.php?id=510030" 
+             htmlUrl="http://www.uh.edu/engines/engines.htm" />
+	<outline text="Science &#38; the City" type="rss" 
+             xmlUrl="http://www.nyas.org/Podcasts/Atom.axd" 
+             htmlUrl="http://www.nyas.org/WhatWeDo/SciencetheCity.aspx" />
+  </outline>
+  <outline text="Books and Fiction">
+	<outline text="Podiobooker" type="rss" 
+             xmlUrl="http://feeds.feedburner.com/podiobooks" 
+             htmlUrl="http://www.podiobooks.com/blog" />
+	<outline text="The Drabblecast" type="rss" 
+             xmlUrl="http://web.me.com/normsherman/Site/Podcast/rss.xml" 
+             htmlUrl="http://web.me.com/normsherman/Site/Podcast/Podcast.html" />
+	<outline text="tor.com / category / tordotstories" type="rss" 
+             xmlUrl="http://www.tor.com/rss/category/TorDotStories" 
+             htmlUrl="http://www.tor.com/" />
+  </outline>
+  <outline text="Computers and Programming">
+	<outline text="MacBreak Weekly" type="rss" 
+             xmlUrl="http://leo.am/podcasts/mbw" 
+             htmlUrl="http://twit.tv/mbw" />
+	<outline text="FLOSS Weekly" type="rss" 
+             xmlUrl="http://leo.am/podcasts/floss" 
+             htmlUrl="http://twit.tv" />
+	<outline text="Core Intuition" type="rss" 
+             xmlUrl="http://www.coreint.org/podcast.xml" 
+             htmlUrl="http://www.coreint.org/" />
+  </outline>
+  <outline text="Python">
+    <outline text="PyCon Podcast" type="rss" 
+             xmlUrl="http://advocacy.python.org/podcasts/pycon.rss" 
+             htmlUrl="http://advocacy.python.org/podcasts/" />
+	<outline text="A Little Bit of Python" type="rss" 
+             xmlUrl="http://advocacy.python.org/podcasts/littlebit.rss" 
+             htmlUrl="http://advocacy.python.org/podcasts/" />
+	<outline text="Django Dose Everything Feed" type="rss" 
+             xmlUrl="http://djangodose.com/everything/feed/" />
+  </outline>
+  <outline text="Miscelaneous">
+	<outline text="dhellmann's CastSampler Feed" type="rss" 
+             xmlUrl="http://www.castsampler.com/cast/feed/rss/dhellmann/" 
+             htmlUrl="http://www.castsampler.com/users/dhellmann/" />
+  </outline>
+</body>
+</opml>

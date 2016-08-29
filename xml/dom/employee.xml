@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<company>
+	<name>Trinaha Solutions</name>
+	<emp id="1">
+		<nickname>jb</nickname>
+		<salary>10000</salary>
+	</emp>
+	<emp id="2">
+		<nickname>mp</nickname>
+		<salary>20000</salary>
+	</emp>
+	<emp id="3">
+		<nickname>kp</nickname>
+		<salary>20000</salary>
+	</emp>
+	<name>Sun Algo Systems</name>
+	<emp id="4">
+		<nickname>vg</nickname>
+		<salary>20000</salary>
+	</emp>
+</company>
