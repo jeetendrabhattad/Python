@@ -1,0 +1,149 @@
+					List of Programs
+
+1. Write a program to accept number from user and check if the number is even
+
+2. WaP to accept number from user and accept bit position to turn OFF in given number
+
+3. WaP to accept number from user,accept bit position and also number of bits to turn OFF that set of bits in given number
+
+4. WaP to accept number from user and accept bit position to turn ON in given number
+
+5. WaP to accept number from user,accept bit position and also number of bits to turn ON that set of bits in given number
+
+6. WaP to accept number from user and accept bit position to TOGGLE in given number
+
+7. WaP to accept number from user,accept bit position and also number of bits to TOGGLE that set of bits in given number
+
+8. WaP to accept 2 numbers from user, accept bit position and number of bits to be replaced of number 2 by number 1's corresponding bits
+
+9. WaP to turnoff right most one bit in a number
+
+10. WaP to count number of 1 bits in a given number
+
+11. WaP to add 2,3,4 or 5 integers
+
+12. WaP to check if given number is a Palindrome
+
+13. WaP to print Fibonacci series upto n (n - Accept from user)
+
+14. WaP to accept number from user and check if its a special number or not
+Special number is a number in which sum of factorial of the digits is equal to the number.
+Ex: 145
+1! + 4! + 5! = 145
+
+15. WaP to print following patterns:
+a.  1
+    1    2
+    1    2    3
+    1    2    3    4 
+
+c.    a
+      a     b     
+      a     b     c
+
+d. *     *      *      *
+      *      *      *
+	 *      *
+	     *
+
+e.  *
+    *      *
+    *      *       *
+    *      *       *       *
+
+f.                           *
+                      *            *
+               *            *            *
+        *            *            *             *
+
+16. WaP to accept range from user and print all prime numbers in that range
+
+17. WaP to accept string from user and count number of consonants in a given string
+
+18. WaP to accept string from user and perform the below operation:
+Ex:	Input: aabbbbbcccddaaaaa
+	Output: a2b4c3d2a5
+
+19. WaP to accept string from user and perform the below operation on that string
+Ex:	Input: Arpita
+	Output: Arta
+
+20. WaP to accept string from user, accept also a character and perform the below operation on that string
+Ex:	Input: babble
+	Output: ba**le
+
+21. Given strings A and B. Replace first 2 characters of strings and return a single string which is separated by space
+Ex: S1 ="Dog" S2="Dinner"
+Output: Dig Donner
+
+22. Write list comprehension to generate the following list:
+a. List of squares within given range
+b. List of cubes in given range
+c. List of Even numbers in given range
+d. List of Odd numbers in given range, also compute the squares of that Odd numbers using List comprehension
+e. List of multiples of 5 in given range
+f. List of Tables in given range
+g. List of intersection of 2 given lists
+h. List of Special numbers
+i. List of unique elements
+Ex: 	input = [1,3,5,2,1,5,3,7,9,9,7,3]
+	output: [1,2,3,5,7,9]
+
+23. Given a string, if its length is atleast 3, add 'ing' to its end. Unless it already ending in 'ing', here add 'ly'. If string length < 3, leave it unchanged
+
+24. Given a string, find first appearance of substring "not" and "bad". If "bad" follows "not", replace " not*bad" with "good"
+
+25. WaP to implement Stack using list
+
+26. WaP to accept 2 lists from user, sort them using Sort method. Write a function to create a list which merges 2 lists, element by element without using builtin function
+
+27. WaP to accept a sentence from user and reverse each string in that sentence and display result
+
+28. WaP which takes 2 digits x and y as input and generates a Matrix
+
+29. WaP to accept range from user and find all numbers in that range which have all digits as even
+
+30. WaP to accept sentence which contains letters and digits. Count letters and digits in it and return dictionary of the same
+
+31. WaP to accept sentence which contains uppercase and lowercase letters. Count uppercase and lowercase in it and return dictionary of the same
+
+32. WaP that computes value of a+aa+aaa+aaaa as return value
+Ex:	Input: 5
+	Output: 5 + 55 + 555 + 5555+ 55555 = 61725
+
+33. WaP to sort a given list
+
+34. WaP to accept a filename from user, open that file in read mode and print lines in reverse order
+
+35. WaP to implement Queue using list
+
+36. WaP to accept filename from user and accept number of bytes to be read in alternate fashion
+
+37. WaP to accept filename from user and print smallest and longest line of the file
+
+38. Write code to read a file of petrol prices in Maharashtra, Goa & Karnataka:
+
+Jan 2015 81 67 84
+Feb 2015 79 66 82
+Mar 2015 78 65 81
+Apr 2015 77 64 80
+...
+Output the average petrol price for each state to an output file named petrol_avg_out.txt.
+
+39. Read alternate 10-10 characters of file
+
+40. Write a program to parse config file. Configuration specified using "="
+
+41. Write a program to parse config file, configuration using ":" config_app.conf
+
+42. Write a program to count total number of files present in given directory along with files present in sub-directories
+
+43. Write a program to copy one file to other file using shutil
+
+44. Write a program to generate a zip or tar using shutil
+
+45. Using shutil identify the methods which can be used to create programmer defined archive file
+
+46. Explore module which can be used to compare files and directories
+
+

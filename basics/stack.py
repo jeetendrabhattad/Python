@@ -9,6 +9,9 @@ def Pop(l1):
 def IsEmpty(l1):
     return l1 == []
 
+def IsFull(l1):
+    return len(l1) == 10
+    
 def Peep(l1):
     return l1[-1]
 
@@ -27,17 +30,20 @@ def SimulateStack():
         choice = Menu()
         if choice == 1:
             data = input("Enter Data:-")
-            Push(L1, data)
+            if not IsFull(L1):
+                Push(L1, data)
+            else:
+                print("Stack is full pop something")
         elif choice == 2:
             if not IsEmpty(L1):
                 print("Data is %d"%(Pop(L1)))
             else:
-                print("List is Empty")
+                print("Stack is Empty")
         elif choice == 3:
             if not IsEmpty(L1):
                 print("Data at top is %d"%(Peep(L1)))
             else:
-                print("List is Empty")
+                print("Stack is Empty")
         elif choice == 4:
             print(L1)
         elif choice == 5:

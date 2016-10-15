@@ -1,0 +1,2 @@
+ERROR:root:This message should go to the log file
+CRITICAL:root:This message should go to the log file

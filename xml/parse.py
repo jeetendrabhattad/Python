@@ -3,7 +3,7 @@ import logging
 
 with open('podcasts.opml', 'rt') as f:
     tree = ElementTree.parse(f)
-    print tree
+    #print tree
 
 for node in tree.iter():
     print node.tag, node.attrib

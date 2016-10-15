@@ -1,4 +1,5 @@
 try:
+    r=y
     fd = open("testfile", "r")
     try:
         fd.write("This is test writing !!1")

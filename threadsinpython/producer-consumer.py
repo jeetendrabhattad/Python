@@ -11,6 +11,9 @@ def read():
             produce_event.clear()
             produce_event.wait()
         print "\nConsumed ", data[0]
+        if data[0] == "end":
+            consume_event.set()
+            break
         del data[0]
         consume_event.set()
         time.sleep(1)
@@ -21,14 +24,18 @@ def write():
         if len(data) == 10:
             consume_event.clear()
             consume_event.wait()
-        val = input("Enter Data:-")
+        val = input("Enter Data (to stop enter end):-")
         data.append(val)
+        if val == "end":
+            produce_event.set()
+            break
+            
         if len(data) == 10:
             produce_event.set()
         time.sleep(0.1)
 
-consumer = Thread(target=read)
-producer = Thread(target=write)
+consumer = Thread(target=read, name="consumer")
+producer = Thread(target=write, name= "producer")
 consumer.start()
 producer.start()
 

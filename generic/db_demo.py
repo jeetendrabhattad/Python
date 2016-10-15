@@ -4,13 +4,16 @@ import MySQLdb as mdb
 import sys
 con = None
 try:
-    con = mdb.connect('localhost', 'testuser', 'test623', 'testdb');
+    con = mdb.connect('localhost', 'testuser', 'test123', 'testdb');
 
     cur = con.cursor()
     cur.execute("SELECT VERSION()")
     ver = cur.fetchone()
     print "Database values : ", ver
-    
+   
+    cur.execute("create table if not exists employee (eid int primary key , ename varchar(25), age int)");
+    cur.execute("insert into employee values(1, \"Chetan\", 25)")
+
     cur.execute("SELECT * from employee")
     ver = cur.fetchall()
     print "Database values : ", ver

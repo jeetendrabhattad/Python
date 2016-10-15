@@ -13,7 +13,7 @@ def get_job():
     time.sleep(0.1)
     x = data
     lock.release()
-    return data
+    return x
 
 def process_job():
     print get_job()
