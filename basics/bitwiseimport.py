@@ -34,8 +34,8 @@ def IsDivisibleByEight(n):
 def TurnOn(n,pos):
 	#y=1<<(pos-1)
     y = 2**(pos-1)
-	result=n|y
-	return result
+    result=n|y
+    return result
 
 def TurnOff(n,pos):
 	y=~(1<<(pos-1))

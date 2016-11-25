@@ -35,4 +35,5 @@ z.Display()
 z.Print()
 z.Foo()
 '''
+print(type.mro(C))
 print(inspect.getmro(C))

@@ -3,7 +3,6 @@ import threading
 def worker():
     """thread worker function"""
     print 'Worker'
-    return
 
 if __name__ == '__main__':
     t = threading.Thread(target=worker)

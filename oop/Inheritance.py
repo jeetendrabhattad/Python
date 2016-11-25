@@ -24,7 +24,7 @@ class Child(Parent):
 	def __del__(self):
 		print ("Destroying Child")
 	def Expense(self,exp):
-		super(Child, self).TotalExpense(exp)
+		super(self, Child).TotalExpense(exp)
 		self.consume =exp
 		self.salary -= exp
 		 

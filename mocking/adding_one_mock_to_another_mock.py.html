@@ -1,0 +1,53 @@
+<html><head>
+<title>adding_one_mock_to_another_mock.py</title>
+<meta name="Generator" content="htmlizer/[twisted, version 13.2.0]" />
+<link rel="alternate" href="adding_one_mock_to_another_mock.py" type="text/x-python" />
+
+</head>
+<body>
+<pre><span class="py-src-keyword">from</span> <span class="py-src-variable">mock</span> <span class="py-src-keyword">import</span> <span class="py-src-variable">Mock</span>
+ 
+<span class="py-src-comment"># The mock object</span>
+<span class="py-src-keyword">class</span> <span class="py-src-identifier">Foo</span>(<span class="py-src-parameter">object</span>):
+    <span class="py-src-comment"># instance properties</span>
+    <span class="py-src-variable">_fooValue</span> = <span class="py-src-number">123</span>
+     
+    <span class="py-src-keyword">def</span> <span class="py-src-identifier">callFoo</span>(<span class="py-src-parameter">self</span>):
+        <span class="py-src-keyword">print</span> <span class="py-src-string">"Foo:callFoo_"</span>
+     
+    <span class="py-src-keyword">def</span> <span class="py-src-identifier">doFoo</span>(<span class="py-src-parameter">self</span>, <span class="py-src-parameter">argValue</span>):
+        <span class="py-src-keyword">print</span> <span class="py-src-string">"Foo:doFoo:input = "</span>, <span class="py-src-variable">argValue</span>
+ 
+<span class="py-src-keyword">class</span> <span class="py-src-identifier">Bar</span>(<span class="py-src-parameter">object</span>):
+    <span class="py-src-comment"># instance properties</span>
+    <span class="py-src-variable">_barValue</span> = <span class="py-src-number">456</span>
+     
+    <span class="py-src-keyword">def</span> <span class="py-src-identifier">callBar</span>(<span class="py-src-parameter">self</span>):
+        <span class="py-src-keyword">pass</span>
+     
+    <span class="py-src-keyword">def</span> <span class="py-src-identifier">doBar</span>(<span class="py-src-parameter">self</span>, <span class="py-src-parameter">argValue</span>):
+        <span class="py-src-keyword">pass</span>
+ 
+<span class="py-src-comment"># create the first mock object</span>
+<span class="py-src-variable">mockFoo</span> = <span class="py-src-variable">Mock</span>(<span class="py-src-variable">spec</span> = <span class="py-src-variable">Foo</span>)
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockFoo</span>
+ 
+<span class="py-src-comment"># create the second mock object</span>
+<span class="py-src-variable">mockBar</span> = <span class="py-src-variable">Mock</span>(<span class="py-src-variable">spec</span> = <span class="py-src-variable">Bar</span>)
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockBar</span>
+ 
+<span class="py-src-comment"># attach the second mock to the first</span>
+<span class="py-src-variable">mockFoo</span>.<span class="py-src-variable">attach_mock</span>(<span class="py-src-variable">mockBar</span>, <span class="py-src-string">'fooBar'</span>)
+ 
+<span class="py-src-comment"># access the first mock's attributes</span>
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockFoo</span>
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockFoo</span>.<span class="py-src-variable">_fooValue</span>
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockFoo</span>.<span class="py-src-variable">callFoo</span>()
+ 
+<span class="py-src-comment"># access the second mock and its attributes</span>
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockFoo</span>.<span class="py-src-variable">fooBar</span>
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockFoo</span>.<span class="py-src-variable">fooBar</span>.<span class="py-src-variable">_barValue</span>
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockFoo</span>.<span class="py-src-variable">fooBar</span>.<span class="py-src-variable">callBar</span>()
+<span class="py-src-keyword">print</span> <span class="py-src-variable">mockFoo</span>.<span class="py-src-variable">fooBar</span>.<span class="py-src-variable">doBar</span>(<span class="py-src-string">"narf"</span>)
+</pre>
+</body>

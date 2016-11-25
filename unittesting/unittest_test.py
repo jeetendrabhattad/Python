@@ -1,12 +1,15 @@
 import unittest
 
-class TestStringMethods(unittest.TestCase):
+class StringMethods(unittest.TestCase):
 
     def test_upper(self):
+        #obj = Person()
+        #self.assertTrue(obj.IsEmployeed())
         self.assertEqual('foo'.upper(), 'FOO')
 
     def test_isupper(self):
-        self.assertTrue('FOO'.isupper())
+        print("Verifying for isupper")
+        self.assertTrue('FOO'.islower())
         self.assertFalse('Foo'.isupper())
 
     def test_split(self):
@@ -18,5 +21,16 @@ class TestStringMethods(unittest.TestCase):
     def test(self):
         print "Hello"
 
+    def runTest(self):
+        print("inside run")
+        self.test_split()
+        self.test()
+        self.test_isupper()
+        #print args, kwargs
+        #StringMethods.test_split(args[0])
+
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main() # run
+    #obj = StringMethods()
+    #obj.run()
+    

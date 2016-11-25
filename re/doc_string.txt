@@ -1,0 +1,22 @@
+def foo():
+    """ 
+        Hello Foo 
+        Its Doc String
+    """
+    pass
+
+def bar():
+    """
+        Its Bar
+    """
+    pass
+<xml>
+<name>Jeetendra</ename>
+<surname>Bhattad</surname>
+<sfadsf>fadsfaf<safdas>
+</xml>
+
+Jeetendra
+Bhattad
+
+output : {"name": "Jeetendra", "surname": "Bhattad"}

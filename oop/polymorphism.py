@@ -5,20 +5,21 @@ class Shape:
         print "Shape Constructor"
     def __del__(self):
         print "Shape Destructor"
-    def __Draw(self):
+    def Draw(self):
         pass
-    def __Area(self):
+    def Area(self):
         pass
 
 class Circle(Shape):
     def __init__(self, radius):
         print "Circle Constructor"
+	Shape.__init__(self)
         self.radius = radius
     def __del__(self):
         print "Circle Destructor"
-    def __Draw(self):
+    def Draw(self):
         print "Drawing Circle of Radius {}".format(self.radius)
-    def __Area(self):
+    def Area(self):
         return self.radius*self.radius*22.0/7.0
 
 class Rectangle(Shape):
@@ -28,9 +29,9 @@ class Rectangle(Shape):
         self.breadth = breadth
     def __del__(self):
         print "Rectangle Destructor"
-    def __Draw(self):
+    def Draw(self):
         print "Drawing Rectanlge of length {} breadth {}".format(self.length, self.breadth)
-    def __Area(self):
+    def Area(self):
         return self.length*self.breadth
     
 class Square(Shape):
@@ -39,11 +40,11 @@ class Square(Shape):
         self.length = length
     def __del__(self):
         print "Square Destructor"
-    def __Draw(self):
+    def Draw(self):
         print "Drawing Square of length {}".format(self.length)
-    def __Area(self):
+    def Area(self):
         return self.length*self.length
-
+'''
 class ShapeManager:
     def Draw(self, obj):
         if(isinstance(obj,Square)):
@@ -59,16 +60,19 @@ class ShapeManager:
             return obj._Rectangle__Area()
         elif(isinstance(obj, Circle)):
             return obj._Circle__Area()
+'''
 
+def Draw(obj):
+    obj.Draw()
 def Main():
-    sm = ShapeManager()
     sq = Square(10)
-    sm.Draw(sq)
-    print sm.Area(sq)
-
-    rt= Rectangle(5, 7)
-    sm.Draw(rt)
-    print sm.Area(rt)
+    sq.Draw()
+    Draw(sq)
+    rt = Rectangle(5, 8)
+    rt.Draw()
+    Draw(rt)
+    Draw(cr)
+    print ("Rectangle area is {}".format(rt.Area()))
 
 if __name__ == "__main__":
     Main()

@@ -2,7 +2,8 @@ import re
 #import time
 
 # Pre-compile the patterns
-regexes = [ re.compile(p) for p in [ 'India', 'Country' ] ]
+regexes = [ re.compile(p) for p in [ 'India', 'Country', "Stellus" ] ]
+print regexes
 text = 'India is my Country.'
 
 for regex in regexes:

@@ -22,7 +22,7 @@ def main():
     x = Human(28, "Jeetendra")
     print(x.age)
     print(x.name)
-    x[1:2:1]
+    #x[1:2:1]
     y = Human(30, "Bharat")
     print(y.age)
     print(y.name)
@@ -33,6 +33,7 @@ def main():
     x.teach = True
 
     print (x.__dict__)
+    print (y.__dict__)
     print (dir(x))
 
     x > y # x.__gt__(y)

@@ -3,6 +3,7 @@ class SpeedLimitError(Exception):
     def __init__(self, speed):
         self.speed = speed
     def __str__(self):
+	''' Invoked when : print e where e is of type SpeedLimitError '''
         return "Vehicle Speed is "+str(self.speed)
 
 class SpeedBelowLimit(SpeedLimitError):
@@ -20,7 +21,9 @@ if __name__=="__main__":
         try:
             speed = input("Enter Speed:")
             if speed < 20:
-                raise SpeedBelowLimit(speed)
+		x = SpeedBelowLimit(speed)
+		raise x
+                #raise SpeedBelowLimit(speed)
             elif speed > 80:
                 raise SpeedAboveLimit(speed)
             else:
