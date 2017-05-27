@@ -11,21 +11,21 @@ try:
     ver = cur.fetchone()
     print "Database values : ", ver
    
-    cur.execute("create table if not exists employee_stellus (eid int primary key , ename varchar(25), age int)");
-    cur.execute("insert into employee_stellus values(1, \"Chetan\", 25)")
+    cur.execute("create table if not exists employee (eid int primary key , ename varchar(25), age int)");
+    cur.execute("insert into employee values(1, \"Chetan\", 25)")
 
-    cur.execute("SELECT * from employee_stellus")
+    cur.execute("SELECT * from employee")
     ver = cur.fetchall()
     print "Database values : ", ver
 
-    cur.execute("update employee_stellus set ename=\"Vinod\" where eid=1")
-    cur.execute("SELECT * from employee_stellus")
+    cur.execute("update employee set ename=\"Vinod\" where eid=1")
+    cur.execute("SELECT * from employee")
     ver = cur.fetchall()
     print "After Update Database values : ", ver
 
-    cur.execute("insert into employee_stellus values(6,\"Chetan\", 25)")
-    cur.execute("insert into employee_stellus values(2,\"Vishwa\", 32)")
-    cur.execute("SELECT * from employee_stellus")
+    cur.execute("insert into employee values(6,\"Chetan\", 25)")
+    cur.execute("insert into employee values(2,\"Vishwa\", 32)")
+    cur.execute("SELECT * from employee")
     ver = cur.fetchall()
     print "After Insert Database values : ", ver
     con.commit()

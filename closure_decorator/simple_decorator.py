@@ -15,8 +15,8 @@ def WrapperCoroutine(func):
     return init
 
 @WrapperCoroutine
-def ToUpper(*args):
-    print(args)    
+def ToUpper():
+    #print(args)    
     while True:
         string = yield # coroutines
         print(string.upper())
@@ -25,7 +25,9 @@ z = WrapperCoroutine(ToUpper)
 y = z([1,2,3])
 y.send("Hello")
 '''
-z = ToUpper([1,2,3])
+#z = ToUpper([1,2,3])
+z = ToUpper()
+#next(z)
 z.send("Hello")
 z.send("Lloyd Electric")
 print z.__name__

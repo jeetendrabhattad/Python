@@ -15,12 +15,12 @@ class AutoGenerate:
 
 def main():
     x = AutoGenerate(0, 100, 5)
-    #for y in x:
-    #    print y
-    z = iter(x)
+    for y in x:
+        print y
+    '''z = iter(x)
     print(next(z))
     print(next(z))
     print(next(z))
-
+    '''
 if __name__ == "__main__":
     main()

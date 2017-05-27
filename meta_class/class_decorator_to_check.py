@@ -5,7 +5,7 @@ def VerifyManagerMethods(cls):
     def wrapper():
         manager_init_method = False
         manager_del_method = False
-        print (cls.__dict__)
+        #print (cls.__dict__)
         for key in cls.__dict__.iterkeys():
             if key == "__init__":
                 manager_init_method = True

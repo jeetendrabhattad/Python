@@ -7,7 +7,7 @@ def DecorateClass(cls):
     cls.empty_list = []
     return cls
 
-@DecoratorClass
+@DecorateClass
 class Temp(object):
     def __init__(self):
         self.acct_no = 1
@@ -18,7 +18,11 @@ class Temp(object):
 class Test(object):
     def __init__(self):
         self.id = 1
-
+print Temp.__dict__
+print Test.__dict__
+t = Temp()
+print t.__dict__
+'''
 def main():
     t = Temp()
     t1 = Temp()
@@ -35,7 +39,7 @@ def main():
     t.empty_list.append([1,2,3])
     print(Temp.empty_list, t.empty_list, t1.empty_list)
     print(id(Temp.empty_list), id(t.empty_list), id(t1.empty_list))
-
+'''
 '''
 def main():
     print (id(Test.added_attribute), id(Test.empty_list))
@@ -71,6 +75,7 @@ def main():
     obj1 = Test()
     print (id(obj1.added_attribute))
 ''' 
-
+'''
 if __name__ == "__main__":
     main()
+'''

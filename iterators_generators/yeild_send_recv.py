@@ -9,6 +9,7 @@ def produce(consumer):
     while True:
         data = random.randint(1, 1000)
         consumer.send(data)
+        print("Sent : {}".format(data))
         yield
 
 if __name__ == '__main__':

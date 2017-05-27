@@ -25,6 +25,10 @@ def callback(arg, directory, files):
         else:
             other_count += 1
 
-print sys.argv
-os.path.walk("/home/jeetendra/Documents/Personal/python_practice/generic/", callback, "directory traverse")
-print py_count, c_count, cpp_count, h_count, other_count
+def main():
+    print sys.argv
+    os.path.walk("/home/jeetendra/Documents/Personal/python_practice/generic/", callback, "directory traverse")
+    print "Python :", py_count, "C:",c_count,"CPP:", cpp_count,"header:", h_count, "others:",other_count
+
+if __name__ == "__main__":
+    main()

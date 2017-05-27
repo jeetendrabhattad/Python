@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
                      "print 'Today is',ctime(time())\n");
 
   /*Or if you want to run python file within from the C code*/
-  //pyRun_SimpleFile("Filename");
+  //PyRun_SimpleFile("Filename");
   Py_Finalize();
   return 0;
 }

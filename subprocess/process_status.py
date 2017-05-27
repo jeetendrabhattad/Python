@@ -6,7 +6,7 @@ import time
 def StartProcessStatus(timeout):
     count = 0
     while count != 10:
-        output = subprocess.check_output(["top"])
+        output = subprocess.check_output(["ps", "-A"])
         print output
         count += 1
         time.sleep(timeout)

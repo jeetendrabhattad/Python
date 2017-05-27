@@ -3,9 +3,11 @@
 def Increement(n):
     return lambda x : x+n
 
-x = Increement(5)
-print (x(1))
-print (x(1))
+increement_by_5 = Increement(5)
+increement_by_10 = Increement(10)
+increement_by_100 = Increement(100)
+print (increement_by_5(1))
+print (increement_by_100(1))
 y = Increement(10)
 
 

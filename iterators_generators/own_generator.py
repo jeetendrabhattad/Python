@@ -15,13 +15,15 @@ class AutoGenerate:
 def main():
     x = AutoGenerate(0, 100, 5)
     print(type(x))
-    z = iter(x)
-    for y in x:
-        print y
-    print(next(z))
-    print(next(z))
-    print(next(z))
-    print(help(z))
+    z = x.__iter__()
+    #for y in x:
+    #    print y.next()
+    #for u in next(z):
+    #    print u
+    print(z.next().__next__()) # next(z).next()
+    print(z.next().__next__())
+    print(z.next().__next__())
+    #print(help(z.next()))
 
 if __name__ == "__main__":
     main()

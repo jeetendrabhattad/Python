@@ -1,15 +1,18 @@
 class BankAccount:
     auto_account_no = 1# class attribute
+
     def __init__(self, name, balance = 0):
         self.name = name
         self.balance = balance
         self.account_no = BankAccount.auto_account_no
         BankAccount.auto_account_no = BankAccount.auto_account_no + 1
+
     def withdraw(self, amount):
         if self.balance < amount:
             return -1
         self.balance = self.balance - amount
         return self.balance
+
     def deposit(self, amount):
         self.balance =self.balance + amount
 
@@ -18,6 +21,7 @@ class BankAccount:
 
     def __sub__(self, amount):
         return self.withdraw(amount) # BanckAccount.withdraw(self, amount)
+
     def __getitem__(self, obj):
         print (obj)
         print (obj.step)

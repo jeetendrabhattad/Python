@@ -2,6 +2,8 @@
 
 class Shape:
     def __init__(self):
+        '''
+        '''
         print "Shape Constructor"
     def __del__(self):
         print "Shape Destructor"
@@ -9,11 +11,13 @@ class Shape:
         pass
     def Area(self):
         pass
+    def Display(self):
+        print("Display of Shape")
 
 class Circle(Shape):
     def __init__(self, radius):
         print "Circle Constructor"
-	Shape.__init__(self)
+	    Shape.__init__(self)
         self.radius = radius
     def __del__(self):
         print "Circle Destructor"
@@ -44,6 +48,18 @@ class Square(Shape):
         print "Drawing Square of length {}".format(self.length)
     def Area(self):
         return self.length*self.length
+
+class ShapeManager:
+    def Draw(self, obj):
+        obj.Draw()
+    def Area(self, obj):
+        return obj.Area()
+
+sq = Square(9)
+cr = Circle(5)
+shape_mgr  = ShapeManager()
+shape_mgr.Draw(sq);
+shape_mgr.Draw(cr);
 '''
 class ShapeManager:
     def Draw(self, obj):
